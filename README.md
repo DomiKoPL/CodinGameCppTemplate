@@ -20,6 +20,18 @@ In order to run main file, simply use:
 
     bazel run src/main
 
+
+### Configs
+
+There are 4 different configs in file [bazelrc](.bazelrc).
+
+Simply use:
+
+    bazel run --config=name src/main
+
+It is a very nice feature, because you can switch between optimized version and debug version (--config=opt, --config=asan).
+
+
 ## Merging
 
     python code_merger.py src/main.cpp
